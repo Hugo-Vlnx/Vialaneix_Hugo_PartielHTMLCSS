@@ -3,3 +3,36 @@
     padding:0%;
     color: white;
 }
+
+header{
+   background-color:#6a3460;
+   padding: 15px; 
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+   #headerGauche{
+   
+   
+        img{
+            height: 100px;
+        }
+   }
+
+    #headerDroit{
+       
+        color: white;
+        font-size: 40px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      
+
+       
+        
+    }
+
+}
