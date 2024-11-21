@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Oleo+Script:wght@400;700&family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
 *{
     margin: 0%;
     padding:0%;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 header{
@@ -29,10 +32,42 @@ header{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-      
-
-       
         
     }
 
+}
+
+main{
+
+    #hero{
+         height: 800px;
+         margin-top: 0;
+         #GreceImg{
+            margin-top: 0;
+            position: absolute;
+         }
+
+
+        
+
+        #GreceTexte{
+            margin-top: 100px;
+            width: 500px;
+          background-color: #6a3460;
+          padding: 10px;
+          font-family: "Oleo Script", system-ui;
+          font-size: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          margin-top: 200px;
+          position: relative;
+        }
+    }
+   #presentation{
+
+     #voyageur{
+
+     }
+   }
 }
