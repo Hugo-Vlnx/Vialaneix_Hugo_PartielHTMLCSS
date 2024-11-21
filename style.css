@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Oleo+Script:wght@400;700&family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 *{
     margin: 0%;
     padding:0%;
-    color: rgb(255, 255, 255);
+    
 }
 
 header{
-   background-color:#6a3460;
+    background-color:#6a3460;
    padding: 15px; 
    display: flex;
     flex-wrap: wrap;
@@ -32,6 +32,11 @@ header{
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+
+        &:hover{
+            text-decoration: underline;
+            color: black;
+        }
         
     }
 
@@ -65,9 +70,82 @@ main{
         }
     }
    #presentation{
-
+    
+     color: black;
+     text-align: center;
+     font-size: 30px;
+     background-color: #E4DCE2;
      #voyageur{
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 20px;
+        
+          img 
+          {
+            width:200px ;
+            height: 200px;
+          }
+          figcaptation{
+            font-family: "Open Sans", sans-serif;
+            text-align: center;
+          }
+     
+        
+     }
 
      }
    }
+   #CTA{
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: url(./image/holiday.jpg);
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    #texteCTA{
+      background-color: #6a3460;  
+    
+      transition-property: background-color,width,height ;
+      transition-duration : 0.5s;
+      transition-timing-function : linear;
+      
+      margin-left:auto ;
+      margin-right: auto;
+      font-weight: 800;
+      display: flex;         
+      justify-content: center; 
+      align-items: center;  
+ 
+        
+        font-size: 50px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        text-align: center;
+
+       
+
+    }
+    footer{
+        #rectangle{
+
+       height: 500px;
+        background-color: #6a3460;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+      }
+
+        
+    }
 }
