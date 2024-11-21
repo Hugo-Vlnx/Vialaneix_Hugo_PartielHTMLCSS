@@ -33,7 +33,7 @@ header{
         flex-direction: row;
         justify-content: center;
 
-        &:hover{
+        i:hover{
             text-decoration: underline;
             color: black;
         }
@@ -88,6 +88,11 @@ main{
           {
             width:200px ;
             height: 200px;
+           
+
+            &:hover{
+                transform: scale(1.2);
+            }
           }
           figcaptation{
             font-family: "Open Sans", sans-serif;
@@ -112,10 +117,12 @@ main{
     align-items: center;
     #texteCTA{
       background-color: #6a3460;  
-    
-      transition-property: background-color,width,height ;
-      transition-duration : 0.5s;
+      transition-property: background-color,color ;
+      transition-duration : 1s;
       transition-timing-function : linear;
+
+        
+      
       
       margin-left:auto ;
       margin-right: auto;
@@ -130,7 +137,10 @@ main{
         margin-bottom: 80px;
         text-align: center;
 
-       
+        &hover{
+            background-color: #3f0735;
+            color: aliceblue;
+        }
 
     }
     footer{
@@ -143,7 +153,35 @@ main{
         justify-content: center;
         align-items: center;
         padding: 20px;
-        
+
+        @keyframes maSuperAnimation{
+            0% {
+                transform: width(0px);
+            }
+            50%{
+                transform:width(250px)
+            }
+            100% {
+                transform: width(500px);
+            }
+            @keyframes maDeuxiemeSuperAnimation{
+                0% {
+                    transform: rotate(0deg);
+                }
+                33%{
+                    transform:rotate(90deg)
+                }
+                66% {
+                    transform: rotate(180deg);
+                }
+                100%{
+                    transform: rotate(360deg)
+                }
+
+            img:hover{
+                animation: maSuperAnimation 3s;
+                animation: maDeuxiemeSuperAnimation 6s;
+            }
       }
 
         
